@@ -1,0 +1,140 @@
+// MEDIA 991px **********************************
+@media (max-width: 991px) {
+.header {
+    padding: 0 10px;
+}
+.promo {
+    padding: 15px 0 80px 0;
+    &__wrapper {
+        align-items: center;
+    }
+}
+}
+// MEDIA 767px **********************************
+@media (max-width: 767px) {
+.header {
+    padding: 0 40px;
+    &__official {
+        display: none;
+    }
+}
+}
+.advantages {
+    h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+    &__wrapper {
+        margin-top: 55px;
+        padding: 0 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__item:last-child {
+        margin-top: 20px;
+    }
+    &__suptitle {
+        margin-top: 22px;
+    }
+    &__descr {
+        margin-top: 15px;
+    }
+}
+// MEDIA 575px **********************************
+@media (max-width: 575px) {
+.header {
+    &__phone {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    &__logo {
+        width: 200px;
+    }
+}
+.promo {
+    padding: 13px 0 60px 0;
+    &__header {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    &__supheader {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &__icons {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+        width: 100%;
+        margin-bottom: 17px;
+        font-size: 14px;
+    }
+    &__link {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    &__wrapper {
+        margin-top: 50px;
+    }
+}
+.button {
+    font-size: 11px;
+    width: 135px;
+    height: 25px;
+    &_main {
+        height: 40px;
+        width: 200px;
+        font-size: 13px;
+        margin-top: 35px;
+    }
+}
+.advantages {
+    padding: 40px 0;
+    h2 {
+        font-size: 23px;
+    }
+    &__item {
+        max-width: 300px;
+        margin-top: 15px;
+    }
+    &__item:first-child {
+        margin-top: 0;
+    }
+    &__item:last-child {
+        margin-top: 15px;
+    }
+    &__wrapper {
+        margin-top: 28px;
+    }
+    &__suptitle {
+        margin-top: 18px;
+    }
+    &__descr {
+        margin-top: 12px;
+    }
+}
+}
+// MEDIA 320px **********************************
+@media (max-width: 320px) {
+.header {
+    padding: 0 5px;
+    margin: 0;
+    &__logo {
+        width: 160px;
+    }
+}
+.promo {
+    &__header {
+        font-size: 22px;
+    }
+    &__supheader {
+        font-size: 13px;
+    }
+    &__icons {
+        width: 320px;
+    }
+}
+}
