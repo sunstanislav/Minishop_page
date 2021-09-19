@@ -23,6 +23,20 @@
     }
 }
 }
+.carousel {
+    padding: 50px 0;
+    .prev {
+        left: 0px;
+    }
+    .next {
+        right: 0px;
+    }
+    .tns-item {
+        img {
+            width: 90%;
+        }
+    }
+}
 }
 // MEDIA 767px **********************************
 @media (max-width: 767px) {
@@ -31,7 +45,6 @@
     &__official {
         display: none;
     }
-}
 }
 .advantages {
     h2 {
@@ -61,6 +74,21 @@
         font-size: 29px;
         line-height: 40px;
     }
+}
+.carousel {
+    padding: 40px 0;
+    .tns-item {
+        img {
+            width: 86%;
+        }
+    }
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
+}
 }
 // MEDIA 575px **********************************
 @media (max-width: 575px) {
@@ -162,6 +190,9 @@
         height: 35px;
     }
 }
+.carousel {
+    padding: 30px 0;
+}
 }
 // MEDIA 320px **********************************
 @media (max-width: 320px) {
@@ -193,6 +224,15 @@
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 25px;
+    }
+}
+.carousel {
+    padding: 30px 0 10px 0;
+    .prev, .next {
+        display: none;
+    }
+    .tns-nav {
+        display: block;
     }
 }
 }
