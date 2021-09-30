@@ -112,6 +112,18 @@
         font-size: 14px;
     }
 }
+.footer {
+    &__info {
+        width: 421px;
+        height: 246px;
+    }
+    &__addr {
+        font-size: 19px;
+    }
+    &__phone {
+        margin-bottom: 25px;
+    }
+}
 }
 // MEDIA 575px **********************************
 @media (max-width: 575px) {
@@ -246,6 +258,12 @@
         line-height: 18px;
     }
 }
+.footer {
+    &__info {
+        width: 100%;
+        padding: 25px 25px;
+    }
+}
 }
 // MEDIA 320px **********************************
 @media (max-width: 320px) {
@@ -286,6 +304,11 @@
     }
     .tns-nav {
         display: block;
+    }
+}
+.footer {
+    &__info {
+        display: none;
     }
 }
 }
