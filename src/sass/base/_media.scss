@@ -48,6 +48,11 @@
         text-align: justify;
     }
 }
+.modal {
+    width: 322px;
+    min-height: 350px;
+    padding: 10px;
+}
 }
 // MEDIA 767px **********************************
 @media (max-width: 767px) {
@@ -106,7 +111,7 @@
     }
     &__text {
         margin-right: 10px;
-        margin: 20px 0 20px 0;
+        margin: 20px 10px 20px 0;
     }
     &__descr {
         font-size: 14px;
@@ -264,6 +269,14 @@
         padding: 25px 25px;
     }
 }
+.overlay {
+    .modal {
+        min-height: 270px;
+        &__descr {
+            margin-bottom: 10px;
+        }
+    }
+}
 }
 // MEDIA 320px **********************************
 @media (max-width: 320px) {
@@ -310,5 +323,26 @@
     &__info {
         display: none;
     }
+}
+.overlay {
+    .modal {
+        min-height: 250px;
+        width: 295px;
+        &__close {
+            top: 11px;
+            right: 9px;
+            font-size: 27px;
+        }
+    }
+#consultation {
+    .modal__subtitle {
+        font-size: 15px;
+        line-height: 13px;
+    }
+    .modal__descr {
+        font-size: 12px;
+        line-height: 10px;
+    }
+}
 }
 }
