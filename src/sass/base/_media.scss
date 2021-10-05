@@ -53,6 +53,11 @@
     min-height: 350px;
     padding: 10px;
 }
+.overlay {
+    .feed-form_mt25 {
+        margin-top: 15px;
+    }
+}
 }
 // MEDIA 767px **********************************
 @media (max-width: 767px) {
@@ -128,6 +133,9 @@
     &__phone {
         margin-bottom: 25px;
     }
+}
+.modal {
+    min-height: 340px;
 }
 }
 // MEDIA 575px **********************************
@@ -224,6 +232,9 @@
     .title {
         font-size: 23px;
     }
+    label.error {
+        font-size: 12px;
+    }
 }
 .feed-form {
     width: 260px;
@@ -275,6 +286,9 @@
         &__descr {
             margin-bottom: 10px;
         }
+    }
+    label.error {
+        font-size: 12px;
     }
 }
 }

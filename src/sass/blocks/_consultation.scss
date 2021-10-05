@@ -9,4 +9,14 @@
         color: #FFFFFF;
         margin-top: 8px;
     }
+    label.error {
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-bottom: 3px;
+    }
+    input.error {
+        margin-bottom: 3px;
+    }
 }
