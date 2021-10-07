@@ -36,7 +36,6 @@ $(document).ready(function(){
   toggleSlide('.catalog-item__back');
 
   // modal
-
   $('[data-modal=consultation]').on('click', function() {
     $('.overlay, #consultation').fadeIn('slow');
   });
@@ -99,6 +98,22 @@ $("form").submit(function(e) {
     $(".overlay, #thanks").fadeIn("slow");
     $("form").trigger("reset");
   });
+  return false;
+});
+
+// pageup
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+  } else {
+    $('.pageup').fadeOut();
+  }
+});
+
+// scroll
+$("a[href^='#']").click(function(){
+  const _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
   return false;
 });
 });
