@@ -61,7 +61,7 @@
 .pageup {
     width: 20px;
     height: 20px;
-    right: 13px;
+    right: 17px;
     bottom: 2px;
     border: none;
     &:hover {
@@ -107,17 +107,17 @@
     }
 }
 .carousel {
-    padding: 40px 0;
+    padding: 30px 0 10px 0;
+    .tns-nav {
+        display: block;
+    }
+    .prev, .next {
+        display: none;
+    }
     .tns-item {
         img {
             width: 86%;
         }
-    }
-    .prev {
-        left: 10px;
-    }
-    .next {
-        right: 10px;
     }
 }
 .feed {
@@ -146,6 +146,9 @@
 }
 .modal {
     min-height: 340px;
+}
+.pageup {
+    display: none !important;
 }
 }
 // MEDIA 575px **********************************
@@ -334,15 +337,7 @@
         margin-bottom: 25px;
     }
 }
-.carousel {
-    padding: 30px 0 10px 0;
-    .prev, .next {
-        display: none;
-    }
-    .tns-nav {
-        display: block;
-    }
-}
+
 .footer {
     &__info {
         display: none;
